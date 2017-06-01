@@ -1,6 +1,5 @@
-![CF](https://i.imgur.com/7v5ASc8.png) Lab 04: Templates
+Lab 04: Templates
 =======
-[Code of Conduct](https://github.com/codefellows/code-of-conduct)
 
 ## Submission Instructions
 When you are finished with lab, follow these steps to submit your work. Create one Pull Request (aka: "PR") from your Forked repo to the CF repo with your changes, and you'll each submit that same PR link in Canvas.
@@ -16,11 +15,11 @@ When you are finished with lab, follow these steps to submit your work. Create o
 ---
 
 ## Learning Objectives
-* Identify different approaches to reusable HTML templates
-* Effectively use templates to present user-entered (or server-provided) data (methods on the Handlebars object)
-* Distinguish between the different Handlebars expression types (`{{}}` vs `{{{}}}`)
-* Modify and style typographic components (serif, san-serif fonts, font-size, font-family, color, font-weight, etc)
-* Understand the application and use of string literals, interpolation, and introduction to ES2015 syntax
+* Discuss different ways to reuse HTML, specifically using templates.
+* Display data using a Handlebars template.
+* Distinguish between the different Handlebars expression types ( **{{}}** vs **{{{}}}** ).
+* Add personality to a website by styling the typography.
+* Interpolate a variable into a string using ES2015 template literals.
 
 ---
 
