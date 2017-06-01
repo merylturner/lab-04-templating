@@ -59,18 +59,20 @@ articleView.handleMainNav = function() {
 
 articleView.setTeasers = function() {
   $('.article-body *:nth-of-type(n+2)').hide();
-  $('article').on('click', 'a.read-on', function(e) {
-    e.preventDefault();
-    if ($(this).text() === 'Read on →') {
-      $(this).parent().find('*').fadeIn();
-      $(this).html('Show Less &larr;');
-    } else {
-      $('body').animate({
-        scrollTop: ($(this).parent().offset().top)
-      },200);
-      $(this).html('Read on &rarr;');
-      $(this).parent().find('.article-body *:nth-of-type(n+2)').hide();
-    }
+  $('.read-on').on('click', function () {
+    event.preventDefault();
+    $(this).toggleClass('hidden');
+    $(this).parent().find($('.show-less')).toggleClass('hidden');
+    $(this).parent().find($('.article-body *:nth-of-type(n+2)')).fadeIn(500);
+
+  });
+  // STRETCH GOAl!: change the 'Read On' link to 'Show Less'
+  $('.show-less').on('click', function () {
+    event.preventDefault();
+    $(this).toggleClass('hidden');
+    $(this).parent().find($('.read-on')).toggleClass('hidden');
+    $(this).parent().find($('.article-body *:nth-of-type(n+2)')).hide();
+
   });
 };
 
