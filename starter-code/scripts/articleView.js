@@ -6,6 +6,7 @@ articleView.populateFilters = function() {
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
       var val = $(this).find('address a').text();
+      // REVIEW Using ES2015 template literals we can interpolate variables into strings in a much cleaner way.
       var optionTag = `<option value="${val}">${val}</option>`;
 
       if ($(`#author-filter option[value="${val}"]`).length === 0) {
